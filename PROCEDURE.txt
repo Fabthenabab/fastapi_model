@@ -15,9 +15,15 @@ git commit -m ".gitignore update"
 git push origin main
 
 # DEPLOYEMENT SUR HF
- GIT_TRACE=1 GIT_CURL_VERBOSE=1 git remote set-url hf https://
-token_fabien_hf@huggingface.co/spaces/Fabien1974/FastAPI
+ GIT_TRACE=1 GIT_CURL_VERBOSE=1 git remote set-url hf https://token_fabien_hf@huggingface.co/spaces/Fabien1974/FastAPI
 
 git remote add hf https://huggingface.co/spaces/Fabien1974/FastAPI
 git remote -v
 git push hf main
+
+git add README.md
+git commit -m "README.md; app.py modification"
+git push hf main
+
+# ENTRY POINTS SUR HUGGING FACE
+https://fabien1974-fastapi.hf.space/docs
