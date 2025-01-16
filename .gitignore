@@ -4,4 +4,5 @@ __pycache__/
 # Exclure les fichiers et les repertoires d'environnement
 .venv/
 .env
+.PROCEDURE.txt
 *.LAPIN
