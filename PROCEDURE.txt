@@ -1,0 +1,23 @@
+echo "# fastapi-model" >> README.md
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/Fabthenabab/fastapi_model.git
+git push -u origin main
+
+# MODIF : ajout fichier PROCEDURE et modif .gitignore
+git rm --cached PROCEDURE.txt
+git status
+git check-ignore -v PROCEDURE.txt
+git add .gitignore
+git commit -m ".gitignore update"
+git push origin main
+
+# DEPLOYEMENT SUR HF
+ GIT_TRACE=1 GIT_CURL_VERBOSE=1 git remote set-url hf https://
+token_fabien_hf@huggingface.co/spaces/Fabien1974/FastAPI
+
+git remote add hf https://huggingface.co/spaces/Fabien1974/FastAPI
+git remote -v
+git push hf main
