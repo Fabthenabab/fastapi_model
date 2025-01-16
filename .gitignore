@@ -1,0 +1,7 @@
+# Exclure les artefacts générés
+__pycache__/
+
+# Exclure les fichiers et les repertoires d'environnement
+.venv/
+.env
+*.LAPIN
